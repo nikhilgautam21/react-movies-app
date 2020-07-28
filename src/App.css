@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   height: 10vh;
   display: flex;
@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  box-sizing: border-box;
+}
+.app-header h2 {
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.movie {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+.errorMsg{
+  color: red;
+}
+
+
